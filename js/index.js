@@ -37,6 +37,64 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo
+
+//NAV
+
+let nav1 = document.getElementsByTagName('a')[0];
+nav1.textContent = 'Services';
+
+let nav2 = document.getElementsByTagName('a')[1];
+nav2.innerHTML = 'Product';
+
+let nav3 = document.getElementsByTagName('a')[2];
+nav3.innerHTML = 'Vision';
+
+let nav4 = document.getElementsByTagName('a')[3];
+nav4.innerHTML = 'Features';
+
+let nav5 = document.getElementsByTagName('a')[4];
+nav5.innerHTML = 'Contact';
+
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// CTA
+
+let cta = document.getElementsByTagName('h1')[0];
+cta.innerHTML = 'DOM is Awesome';
+
+let button = document.getElementsByTagName('button')[0];
+button.innerHTML = 'Get Started';
+
+// Main Content
+
+let featuresHeader = document.getElementsByTagName('h4')[0];
+featuresHeader.innerHTML = 'Features';
+
+let featuresContent = document.getElementsByTagName('p')[0];
+featuresContent.innerHTML = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
+let aboutHeader = document.getElementsByTagName('h4')[1];
+aboutHeader.innerHTML = "About";
+
+let aboutContent= document.getElementsByTagName('p')[1];
+aboutContent.innerHTML = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
+// Img
+
+let circle = document.getElementById("cta-img");
+circle.setAttribute('src', siteContent['cta']['img-src'])
+
+let middle = document.getElementById("middle-img");
+middle.setAttribute('src', siteContent['main-content']['middle-img-src'])
+
+
+
+
+
+//Footer
+let footer = document.querySelector(['footer']);
+footer.textContent = "Copyright Great Idea! 2018";
+
+
+
